@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tienda de Cervezas</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="file:///C:/Users/CompuStore/AppData/Local/Temp/Rar$DIa14832.1790/logo.svg" alt="Logo de la tienda">
+        </div>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="lupa.png" alt="Buscar"></button>
+        </div>
+        <div class="carrito">
+            <img src="carrito.png" alt="Carrito de compras">
+        </div>
+    </header>
+
+    <h1 class="titulo">Cervezas</h1>
+
+    <div class="filtros">
+        <button id="btnFiltrar">Filtrar</button>
+        <div class="modal" id="modalFiltros">
+            <h2>Filtrar por Tipo:</h2>
+            <form>
+                <label>
+                    <input type="checkbox" name="tipo" value="Rubia"> Rubia
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo" value="Morena"> Morena
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo" value="Roja"> Roja
+                </label>
+            </form>
+            <button id="btnLimpiar">Limpiar</button>
+        </div>
+    </div>
+
+    <div class="productos">
+        <div class="producto">
+            <img src="C:\Users\CompuStore\AppData\Local\Temp\Rar$DIa14832.37601\camba.png" alt="Cerveza Rubia">
+            <h2>Cerveza Rubia</h2>
+            <p>Una cerveza refrescante con un sabor suave.</p>
+            <p>Precio: $5.99</p>
+        </div>
+        <div class="producto">
+            <img src="c:\Users\CompuStore\AppData\Local\Temp\Rar$DIa14832.46373\lost-abbey.png" alt="Cerveza Morena">
+            <h2>Cerveza Morena</h2>
+            <p>Una cerveza oscura y aromática con notas de café.</p>
+            <p>Precio: $6.99</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\CompuStore\AppData\Local\Temp\Rar$DIa14832.47613\prairie.png" alt="Cerveza Roja">
+            <h2>Cerveza Roja</h2>
+            <p>Una cerveza roja de cuerpo completo con sabor afrutado.</p>
+            <p>Precio: $7.99</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\CompuStore\AppData\Local\Temp\Rar$DIa14832.49624\topa.png" alt="Cerveza Rubia">
+            <h2>Cerveza Rubia</h2>
+            <p>Una cerveza ligera y refrescante para días calurosos.</p>
+            <p>Precio: $5.99</p>
+        </div>
+    </div>
+
+    <script>
+        const btnFiltrar = document.getElementById('btnFiltrar');
+        const modalFiltros = document.getElementById('modalFiltros');
+        const btnLimpiar = document.getElementById('btnLimpiar');
+
+        btnFiltrar.addEventListener('click', () => {
+            modalFiltros.style.display = 'block';
+        });
+
+        btnLimpiar.addEventListener('click', () => {
+            modalFiltros.style.display = 'none';
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>

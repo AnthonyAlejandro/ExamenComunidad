@@ -1,0 +1,118 @@
+/* Estilos para el encabezado */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Times New Roman", serif;
+}
+
+.logo {
+    order: 1;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño del logo según tu diseño */
+}
+
+.busqueda {
+    order: 2;
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.busqueda button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carrito {
+    order: 3;
+}
+
+.carrito img {
+    width: 30px; /* Ajusta el tamaño del icono del carrito según tu diseño */
+}
+
+/* Estilos para el título "Cervezas" */
+.titulo {
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman", serif;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes y los productos */
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.producto {
+    width: calc(25% - 20px); /* Ajusta el ancho de las imágenes y los productos según tu diseño */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 100%; /* Ajusta el tamaño de las imágenes según tu diseño */
+}
+
+/* Estilos para los filtros */
+.filtros {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.modal form {
+    color: white;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para los iconos del encabezado */
+header img {
+    width: 20px; /* Ajusta el tamaño de los iconos según tu diseño */
+}
